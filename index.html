@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/css/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+  <title>E-MEDIX</title>
+</head>
+
+<body>
+  <div class="ads-wrapper">
+    <div
+      class="news-letter-ads  hover:rounded-lg w-[100%]  lg:w-[30%] lg:h-[73vh] z-20 fixed top-0 lg:top-[18.5%] left-0 lg:left-[34.5%]   h-[100vh]  bg-blue-500 -translate-y-[1000px] transition-all duration-1000 m-auto overflow-hidden  bg-[url('Images/Bg-Img.PNG')] bg-cover bg-center bg-no-repeat">
+      <div class="h-full bg-[#0000ff9f]">
+        <div class="close-news-letter-ads 
+     
+                rounded-full animate-pulse 
+                inline-block float-right text-md size-7 m-2.5 
+                cursor-pointer animated-pulse bg-red-600 text-center text-white">x
+        </div>
+
+        <div class="h-full w-full flex flex-col justify-center items-center">
+          <div class="m-auto w-[95%]  rounded-md text-white grid place-items-center">
+            <p class="font-serif text-3xl  rounded">Newsletter</p>
+            <p class="font-serif text-xl  text-center rounded">Stay up-to-date with the latest drug news and FAQ Alerts
+              delivered
+              straight to
+              your inbox.</p>
+
+            <form id="news-letter-form">
+              <div class="grid place-items-center py-4">
+                <input id="subscribe-input" required
+                  class=" border-none outline-none text-black placeholder:text-center placeholder:text-xl w-72 px-3 py-2 rounded"
+                  type="email" placeholder="Enter your Email">
+                <small class="emailErr px-2 rounded-b text-red-600"></small>
+              </div>
+              <div class="grid place-items-center"><button
+                  class="border bg-blue-700 px-3 pb-1 py-[1px] rounded-lg text-2xl">Subscribe</button></div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <nav class="nav1 bg-blue-400 py-1 text-white">
+      <marquee behavior="scroll" direction="left" class="px-0 block lg:hidden">
+        <div class="flex gap-80">
+          <p>WOW Offers! 60-80% Off For All Tablet Medicine</p>
+          <div class="flex gap-10">
+            <p><i class="fa-solid fa-phone pr-2 text-sm"></i><span>(+234) 703-846-0065</span></p>
+            <p><i class="fa-regular fa-envelope pr-2 text-sm"></i><span>onuemmanuelchukwuma@gmail.com</span></p>
+            <p><i class="fa-solid fa-location-dot pr-2 text-sm"></i><span>Store Location</span></p>
+          </div>
+        </div>
+      </marquee>
+      <div class="wrapper hidden lg:block px-10 mx-auto ">
+        <div class="flex justify-between items-center">
+          <p>WOW Offers! 60-80% Off For All Tablet Medicine</p>
+          <div class="flex gap-10">
+            <p><i class="fa-solid fa-phone pr-2 text-sm"></i><span>(+234) 703-846-0065</span></p>
+            <p><i class="fa-regular fa-envelope pr-2 text-sm"></i><span>onuemmanuelchukwuma@gmail.com</span></p>
+            <p><i class="fa-solid fa-location-dot pr-2 text-sm"></i><span>Store Location</span></p>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+    <div class="nav2 z-10 flex justify-between bg-yellow-50 w-full top-0 left-0 items-center py-2 px-6">
+      <div class="wrapper flex gap-20 w-fit">
+        <div class="flex justify-center items-center cursor-pointer">
+          <span
+            class="text-xl bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-bold">E-MEDIX</span>
+          <img src="Images/LogoCapsule.PNG " class="w-10 py-1" alt="LogoCapsule">
+        </div>
+        <div class="hidden lg:block">
+          <menu class="flex gap-5 *:text-xl">
+            <li>
+              <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-extralight"
+                href="home">Home</a>
+            </li>
+            <li>
+              <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-extralight"
+                href="about">About
+                Us</a>
+            </li>
+            <li>
+              <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-extralight"
+                href="shop">Shop</a>
+            </li>
+            <li>
+              <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-extralight"
+                href="news">News</a>
+            </li>
+            <li>
+              <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-extralight"
+                href="features">Features</a>
+            </li>
+          </menu>
+        </div>
+      </div>
+      <div>
+        <div class="menu-button block lg:hidden cursor-pointer">
+          <div class="flex flex-col justify-center items-center relative">
+            <i
+              class="fa-solid fa-bars  bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-semibold text-xl"></i>
+            <span class="text-[7px] absolute top-5">MENU</span>
+          </div>
+        </div>
+
+
+        <div
+          class="move-to-botton bottom-0 z-10 bg-slate-100 lg:bg-transparent py-2 lg:py-0 fixed lg:relative  left-0  w-[100vw] lg:w-[18vw] mx-auto flex px-7 justify-between items-center">
+          <div
+            class="size-6 bg-blue-800 rounded-full grid place-items-center cursor-pointer bg-gradient-to-r from-red-500 to-blue-600"
+            title="Search">
+            <i class="fa-solid fa-magnifying-glass text-white"></i>
+          </div>
+
+          <div class="w-fit h-fit bg-blue-800 
+                                                            rounded-full bg-gradient-to-r from-red-500 to-blue-600"
+            title="User Account">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 text-white
+                                                  
+                                                  ">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </div>
+
+          <div class="cursor-pointer relative">
+            <img src="https://ps-medicine.myshopify.com/cdn/shop/t/3/assets/cart.png?v=12474805794275926191675771189"
+              title="Shopping Bag" alt="Cart Icon">
+            <span
+              class="absolute text-[8px] px-[4px] rounded-full text-white bg-gradient-to-r from-red-500 to-blue-600 -top-1 right-1">2</span>
+          </div>
+
+          <div class="cursor-pointer" title="WishList">
+            <i
+              class="fa-regular fa-heart text-xl bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text"></i>
+          </div>
+
+          <div class="cursor-pointer" title="Select Language">
+            <i
+              class="fa-solid fa-globe text-[1.31rem] bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text"></i>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="menu overflow-hidden flex justify-start max-h-0 transition-all duration-1000 items-center bg-[#DDEFF2]">
+      <menu class="flex flex-col lg:hidden px-4 gap-5 *:text-xl py-2">
+        <li>
+          <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-mono"
+            href="home">Home</a>
+        </li>
+        <li>
+          <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-mono"
+            href="about">About
+            Us</a>
+        </li>
+        <li>
+          <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-mono"
+            href="shop">Shop</a>
+        </li>
+        <li>
+          <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-mono"
+            href="news">News</a>
+        </li>
+        <li>
+          <a class="bg-gradient-to-r from-red-500 to-blue-600 text-transparent bg-clip-text font-mono"
+            href="features">Features</a>
+        </li>
+      </menu>
+    </div>
+  </header>
+
+
+  <main class="main bg-gray-100">
+
+    <div
+      class="fixed back-to-top grid place-items-center cursor-pointer z-5 bottom-14 right-1 rounded-full  bg-gradient-to-r from-cyan-600 to-red-700 border-2 border-white text-white size-10">
+      <span class="py-2 grid place-items-center"><small class="text-center text-xs">&#129033</small></span>
+    </div>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="block h-fit w-100  lg:h-[84vh]" src="Images/hero1_img.PNG" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="block  w-100 lg:h-[84vh]" src="Images/hero2_img.PNG" alt="Second slide">
+        </div>
+      </div>
+    </div>
+    <section class="pb-6">
+      <div id="about" class="about flex flex-col lg:flex-row justify-center items-center w-[90%] my-4 mx-auto">
+        <div class="w-[100%] mx-auto">
+          <img src="https://ps-medicine.myshopify.com/cdn/shop/files/about_banner_1_570x.png?v=1614788294" alt="">
+        </div>
+
+        <div class="w-[100%]">
+          <h3 class="text-xl grid place-items-center lg:place-items-start">Welcome To Our Medicine Store</h3>
+
+          <h2 class="text-5xl text-blue-800 py-3.5 grid place-items-center lg:place-items-start">About us</h2>
+        
+          <div class="grid place-items-center lg:place-items-start text-justify">
+            <p>
+            E-medix is an Online Medical Health Care Services that offers Varieties of Medical health care services such as:
+         
+            
+            
+            </p>
+          </div>
+
+          <div class=" pt-2">
+            
+            <li>Free online Medical Diagnosis and drug prescription <em> <a class="font-mono text-red-600" href="#getStarted">Get Started</a></em>.</li> 
+            <li class="py-3">We are also dedicated to delivering quality and authentic medications. To achieve this, we have partnered with only
+            pharmacies that are fully licensed and regulated by the Pharmacists’ Council of Nigeria. (PCN), as well as agencies
+            regulating products.</li> 
+            <li>We also link-up Patients with professional Doctor Teams, professional Lab Scientists and Pharmacists for Quality Health
+            Care Assistance. Remember: Health First</li> 
+            <li class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti minus, nobis temporibus reiciendis repudiandae minima animi iure nesciunt maiores eos nemo sed dolorem earum soluta saepe fuga, officiis accusantium. Atque.</li>
+          </div>
+          <div class="grid place-items-center lg:place-items-start">
+            <button class="border bg-blue-800 text-white rounded-lg py-2 px-4 sm:text-center">
+              READ MORE
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid place-items-center py-3">
+        <h3 class="text-2xl text-gray-400">Our Features</h3>
+        <h3 class="text-4xl pb-3">Why Choose Us</h3>
+
+        <div class="border-b-2 border-blue-600 w-32"></div>
+        <div class="flex gap-2 py-1 justify-center items-center">
+          <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
+          <div class="w-2 bg-blue-700 h-2 border-2 border-blue-500 rounded-full"></div>
+          <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-y-3  justify-between mx-auto items-center w-[80%]">
+
+        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full p-6 grid place-items-center">
+            <div class="size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
+              <img class="hover:animate-spin"
+                src="//ps-medicine.myshopify.com/cdn/shop/files/1_2a44437c-c798-4bd1-8005-cc624f4cf614.png?v=1614788300"
+                referrerpolicy="no-referrer" alt="Neurology">
+            </div>
+            <div class="text-center text-xl font-bold">
+              <h2>Neurology</h2>
+            </div>
+            <div class="text-center">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem numquam repel iusto eos enim
+                dolorem!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full p-6 grid place-items-center">
+            <div class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
+              <img 
+                src="https://ps-medicine.myshopify.com/cdn/shop/files/4_a8414ea4-b0ed-42f2-84da-c7d6650df26b.png?v=1614788300"
+                alt="Surgery">
+            </div>
+            <div class="text-center text-xl font-bold">
+              <h2>Surgery</h2>
+            </div>
+            <div class="text-center">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem numquam repel iusto eos enim
+                dolorem!</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+
+          <div class="h-full p-6 grid place-items-center">
+            <div class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
+              <img
+                src="https://ps-medicine.myshopify.com/cdn/shop/files/2_cdb738ac-269c-4aea-9aaf-191c05d44e6c.png?v=1614788300"
+                alt="Therapiya">
+            </div>
+            <div class="text-center text-xl font-bold">
+              <h2>Therapiya</h2>
+            </div>
+            <div class="text-center">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem numquam repel iusto eos enim
+                dolorem!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-y-3 mt-4 justify-between mx-auto items-center w-[80%]">
+        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full p-6 grid place-items-center">
+            <div class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
+              <img
+                src="//ps-medicine.myshopify.com/cdn/shop/files/7_972f628a-9cee-4ce1-b223-708ebbe84194.png?v=1614788300"
+                alt="Cardiology">
+            </div>
+            <div class="text-center text-xl font-bold">
+              <h2>Cardiology</h2>
+            </div>
+            <div class="text-center">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem numquam repel iusto eos enim
+                dolorem!</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full p-6 grid place-items-center">
+            <div class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
+              <img class=""
+                src="//ps-medicine.myshopify.com/cdn/shop/files/6_e899894f-2f28-4ac4-b334-41b52e64ee8c.png?v=1614788300"
+                alt="Dentistry">
+            </div>
+            <div class="text-center text-xl font-bold">
+              <h2>Dentistry</h2>
+            </div>
+            <div class="text-center">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem numquam repel iusto eos enim
+                dolorem!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full p-6 grid place-items-center">
+            <div class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
+              <img
+                src="//ps-medicine.myshopify.com/cdn/shop/files/5_c3710bec-38a3-4cc1-8509-f0de3c72f22a.png?v=1614788300"
+                alt="Urology">
+            </div>
+            <div class="text-center text-xl font-bold">
+              <h2>Urology</h2>
+            </div>
+            <div class="text-center">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem numquam repel iusto eos enim
+                dolorem!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <article id="getStarted" class="h-96 w-full flex flex-col justify-center items-center bg-[url('https://ps-medicine.myshopify.com/cdn/shop/files/parallax_image_06db5c94-7778-4cf2-a6d9-2a9f93a9cc2b_1512x.png?v=1614788478')]">
+
+      <div class="text-center text-white text-2xl *:py-2">
+        <h2>MEDICAL HEALTH CARE</h2>
+        <p>GET FREE MEDICAL DIAGNOSIS AND DRUG PRESCRIPTION</p>
+        <div class="text-xl block lg:hidden text-justify px-2 lg:px-10">
+          <p>How it Work. Click on Get Started and Answer the following questions
+            to enable the system carry out the Diagnosis Check and Prescribe the best drugs that will restore your body system
+            back to normal
+          </p>
+          </div>
+        <div class="text-xl hidden lg:block px-2 lg:px-10">
+          <p>How it Work. Click on Get Started and Answer the following questions
+            to enable the system carry out the Diagnosis Check and Prescribe the best drugs that will restore your body system
+            back to normal
+          </p>
+        </div>
+        <button class="outline-none border  border-white bg-gradient-to-r from-cyan-600 to-red-700 px-4 py-2 rounded-lg">Get Started</button>
+      </div>
+     
+    </article>
+
+    <article class="px-2 lg:px-0 w-full lg:w-[80%]  mx-auto pb-10">
+    
+    
+    
+      <div class="grid place-items-center py-3">
+        <h2 class="py-2">
+          <span
+            class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Frequently</span>
+          <span
+            class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Asked</span>
+          <span
+            class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Question</span>
+        </h2>
+    
+        <div class="border-b-2 border-blue-600 w-48"></div>
+        <div class="flex gap-2 py-1 justify-center items-center">
+          <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
+          <div class="w-2 bg-blue-700 h-2 border-2 border-blue-500 rounded-full"></div>
+          <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
+        </div>
+      </div>
+    
+    
+    
+      <details class="bg-blue-500 text-white px-2 py-3 rounded-t-lg mb-1">
+        <summary>Are you Doctors?</summary>
+        <p class="py-3">
+          No. We are not Doctors, we are Pharmacists and strongly recommend consulting a Medical Doctor regarding any health
+          concern. We strictly provide pharmaceutical services.
+        </p>
+      </details>
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>Can I call instead of text chat?</summary>
+        <p class="py-3">
+          Yes. We have provisions for audio and video chat with our Pharmacists. However, while the 30-minutes text chat is
+          free,
+          audio and video consultation is a paid service.
+        </p>
+      </details>
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>Do you deliver prescription drugs?</summary>
+        <p class="py-3">
+          Yes, we do. However, we need to see a prescription obtained from a Doctor before we can deliver prescription
+          drugs.
+        </p>
+      </details>
+    
+    
+    
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>How authentic are the medications...?</summary>
+        <p class="py-3">
+          We are dedicated to delivering only quality and authentic medications. To achieve this, we have partnered with
+          only
+          pharmacies that are fully licensed and regulated by the Pharmacists’ Council of Nigeria. (PCN), as well as
+          agencies
+          regulating products.
+        </p>
+      </details>
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>When can I place orders?</summary>
+        <p class="py-3">
+          Orders can be placed at any time of the day using any of our platforms.
+        </p>
+      </details>
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>Can I order for a family member?</summary>
+        <p class="py-3">
+          Yes. However, indicate who the drug is for as this information is important for your database and can help us
+          provide
+          professional recommendations.
+        </p>
+      </details>
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>Is it safe to order the Drug online...?</summary>
+        <p class="py-3">
+          We are confident to say definitely Yes. We are dedicated to delivering only quality and authentic medications,
+          which is
+          why we have workforce of qualified and fully licensed Pharmacists who work for eMedicStore and also, we partner
+          with
+          fully licensed pharmacy stores to ensure you get the best value for your money.
+        </p>
+      </details>
+    
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>Can I cancel/edit my order?</summary>
+        <p class="py-3">
+          Yes, you can cancel or edit your order. However, once an order has been paid for, it will be locked and you will
+          be
+          UNABLE to edit or cancel your order.
+        </p>
+      </details>
+    
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>What areas do you serve?</summary>
+        <p class="py-3">
+          We currently deliver within Abuja, however, we have special provisions for delivery outside Abuja while we are
+          working to expand our service area.
+        </p>
+      </details>
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>What happens if I miss a dose?</summary>
+        <p class="py-3">
+          Take the medicine as soon as you can, but skip the missed dose if it is almost time for your next dose. Do not
+          take two
+          doses at one time.
+        </p>
+      </details>
+    
+    
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>What to avoid while taking Drugs.</summary>
+        <p class="py-3">
+          Follow your doctor's instructions about any restrictions on food, beverages, or activity.
+        </p>
+      </details>
+    
+    
+      <details class="bg-blue-500 text-white px-2 py-3 mb-1">
+        <summary>What if i am on ongoing drugs?</summary>
+        <p class="py-3">
+          Tell your doctor about all your other medicines you are taking
+        </p>
+      </details>
+    
+    
+    
+    
+    
+    </article>
+  </main>
+  <footer class="min-h-[70vh] bg-gradient-to-r from-blue-700 via-[#0000ff9f] to-blue-700">
+    <!-- <img src="https://emedicstore.org/images/pcn.png" alt=""> -->
+  </footer>
+
+  <script src="Js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <!-- bootstrap section-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
+
+
+
