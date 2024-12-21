@@ -35,7 +35,22 @@ back2Top.addEventListener("click", () => {scrollTo({ top: 0, behavior: "smooth" 
 closeNewsLetterAds.addEventListener("click", () => newsLetterAds.classList.toggle("-translate-y-[1000px]"));
 menuButton.addEventListener("click", () => menu.classList.toggle("max-h-[250px]"));
 
+let getStarted1 = document.getElementById("getStarted1")
+let getStarted2 = document.getElementById("getStarted2")
+let getStartedBTN = document.getElementById("getStartedBTN");
+let closeGetStartedBTN = document.querySelector(".closeGetStartedBTN");
 
+getStartedBTN.addEventListener("click", getStarted);
+closeGetStartedBTN.addEventListener("click", closeGetStarted);
+
+function getStarted() {
+    getStarted1.classList.toggle("hidden");
+    getStarted2.classList.toggle("hidden"); 
+}
+function closeGetStarted() {   
+    getStarted1.classList.toggle("hidden");
+    getStarted2.classList.toggle("hidden"); 
+}
 
 
 const Boil = [
