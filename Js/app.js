@@ -39,17 +39,27 @@ let getStarted1 = document.getElementById("getStarted1")
 let getStarted2 = document.getElementById("getStarted2")
 let getStartedBTN = document.getElementById("getStartedBTN");
 let closeGetStartedBTN = document.querySelector(".closeGetStartedBTN");
+let continueGetStartedBTN = document.querySelector(".continueGetStartedBTN");
+let privacyProtection = document.querySelector(".data-protection-page");
 
 getStartedBTN.addEventListener("click", getStarted);
 closeGetStartedBTN.addEventListener("click", closeGetStarted);
+continueGetStartedBTN.addEventListener("click", continueGetStarted);
 
 function getStarted() {
     getStarted1.classList.toggle("hidden");
-    getStarted2.classList.toggle("hidden"); 
+    privacyProtection.classList.toggle("hidden"); 
+    
+       
 }
 function closeGetStarted() {   
     getStarted1.classList.toggle("hidden");
-    getStarted2.classList.toggle("hidden"); 
+    privacyProtection.classList.toggle("hidden"); 
+    
+}
+function continueGetStarted() {
+  privacyProtection.classList.toggle("hidden"); 
+getStarted2.classList.toggle("hidden"); 
 }
 
 
@@ -165,3 +175,38 @@ const fungai = [
 const Ulcer = ["Omeprazole-20", 'pantoprazole', "Cemetedin-400", "Misoprostol"];
 
 
+ document.addEventListener("DOMContentLoaded", () => {
+   const steps = document.querySelectorAll(".step");
+   let currentStep = 0;
+
+   function showStep(index) {
+     steps.forEach((step, idx) => {
+       step.classList.toggle("hidden", idx !== index);
+     });
+   }
+
+   document.querySelectorAll(".next").forEach((button) => {
+     button.addEventListener("click", () => {
+       if (currentStep < steps.length - 1) {
+         currentStep++;
+         showStep(currentStep);
+       }
+     });
+   });
+
+   document.querySelectorAll(".prev").forEach((button) => {
+     button.addEventListener("click", () => {
+       if (currentStep > 0) {
+         currentStep--;
+         showStep(currentStep);
+       }
+     });
+   });
+
+   document.getElementById("multistepForm").addEventListener("submit", (e) => {
+     e.preventDefault();
+     alert("Form submitted!");
+   });
+
+   showStep(currentStep);
+ });
