@@ -172,6 +172,9 @@ const fungai = [
   "Fungral-200",
 ];
 
+// let fun1 = () => console.log(Math.floor(Math.random() * 10));
+// fun1();
+
 const Ulcer = ["Omeprazole-20", 'pantoprazole', "Cemetedin-400", "Misoprostol"];
 
 
@@ -210,3 +213,4 @@ const Ulcer = ["Omeprazole-20", 'pantoprazole', "Cemetedin-400", "Misoprostol"];
 
    showStep(currentStep);
  });
+ 
