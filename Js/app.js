@@ -21,7 +21,7 @@ setTimeout(() => {
 
 header.onmouseleave = removeMobileMenu;
 window.addEventListener("scroll", () => {
-    scrollY > 300
+    scrollY > 150
       ? (back2Top.classList.remove("h-0"),
         nav2.classList.add("fixed"),
         nav2.classList.add("bg-blue-50"))
@@ -81,12 +81,7 @@ const Typhoid = [
   'Cenox Cyprofloxacine'
 ];
 
-const Scabis = [
-  "Erythromycin",
-  "Azithromycin",
-  "Cmaxid-500",
-  "Celexin-500",
-];
+const Scabis = ["Erythromycin", "Azithromycin", "Cmaxid-500", "Celexin-500"];
 const STD = [
   "Cyprofloxacin-TN",
   "CiproTab-TN",
@@ -172,10 +167,7 @@ const fungai = [
   "Fungral-200",
 ];
 
-// let fun1 = () => console.log(Math.floor(Math.random() * 10));
-// fun1();
-
-const Ulcer = ["Omeprazole-20", 'pantoprazole', "Cemetedin-400", "Misoprostol"];
+const Ulcer = ["Omeprazole-20", 'Ulcer kit', 'pantoprazole', "Cemetedin-400", "Misoprostol"];
 
 
  document.addEventListener("DOMContentLoaded", () => {
@@ -188,14 +180,80 @@ const Ulcer = ["Omeprazole-20", 'pantoprazole', "Cemetedin-400", "Misoprostol"];
      });
    }
 
-   document.querySelectorAll(".next").forEach((button) => {
-     button.addEventListener("click", () => {
+   function validateStep() {
+     let isValid = true;
+     if (currentStep === 0) {
+       const name1 = document.getElementById("What-brings-you-here");
+       const name2 = document.getElementById("When-did-it-start");
+       const name3 = document.getElementById("first-time");
+       document.getElementById("why-here1").classList.add("hidden");
+       document.getElementById("why-here2").classList.add("hidden");
+       document.getElementById("why-here3").classList.add("hidden");
+
+       if (name1.value === "") {
+         document.getElementById("why-here1").classList.remove("hidden");
+         isValid = false;
+       }
+
+      
+       if (name2.value === "") {
+         document.getElementById("why-here2").classList.remove("hidden");
+         isValid = false;
+       }
+
+      
+       if (name3.value === "") {
+         document.getElementById("why-here3").classList.remove("hidden");
+         isValid = false;
+       }
+
+      
+
+
+     } 
+    //  else if (currentStep === 1) {
+    //    const address = document.getElementById("address");
+    //    const city = document.getElementById("city");
+    //    document.getElementById("addressError").classList.add("hidden");
+    //    document.getElementById("cityError").classList.add("hidden");
+
+    //    if (!address.value.trim()) {
+    //      document.getElementById("addressError").classList.remove("hidden");
+    //      isValid = false;
+    //    }
+
+    //    if (!city.value.trim()) {
+    //      document.getElementById("cityError").classList.remove("hidden");
+    //      isValid = false;
+    //    }
+    //  }
+     return isValid;
+   }
+
+
+ document.querySelectorAll(".next").forEach((button) => {
+   button.addEventListener("click", () => {
+     if (validateStep()) {
        if (currentStep < steps.length - 1) {
          currentStep++;
          showStep(currentStep);
        }
-     });
+     }
    });
+ });
+
+  //  document.querySelectorAll(".next").forEach((button) => {
+  //    button.addEventListener("click", () => {
+  //      if (currentStep < steps.length - 1) {
+  //        currentStep++;
+  //        showStep(currentStep);
+  //      }
+  //    });
+  //  });
+
+
+
+
 
    document.querySelectorAll(".prev").forEach((button) => {
      button.addEventListener("click", () => {
@@ -213,4 +271,10 @@ const Ulcer = ["Omeprazole-20", 'pantoprazole', "Cemetedin-400", "Misoprostol"];
 
    showStep(currentStep);
  });
+
+//  function treatMalaria() {
+//   if (condition) {
+    
+//   }
+//  }
  
