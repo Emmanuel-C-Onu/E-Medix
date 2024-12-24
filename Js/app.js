@@ -72,6 +72,11 @@ const Boil = [
   "Cloxacap-500",
 ];
 
+function treatBoil() {
+  console.log(nu);
+  
+}
+
 const Typhoid = [
   "Cyplox-500",
   "Fleming-1000",
