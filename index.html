@@ -394,16 +394,13 @@
             </div>
             <p class="text-lg">GET FREE MEDICAL DIAGNOSIS AND DRUG PRESCRIPTION</p>
             <div class="text-xl block lg:hidden text-justify px-2 lg:px-10">
-              <p>How it work. click on get started and provide all the necessary answers
-                to help the computer carry out the diagnosis and prescribe the best drugs for you.
+              <p>How it work. click on get started and answers all the questions carefully. 
+            Note that the drug prescription given will be based on your answers.
               </p>
             </div>
             <div class="text-xl hidden lg:block px-2 lg:px-10">
-              <p>How it Work. Click on Get Started and Answer the following questions
-                to enable the system carry out the Diagnosis Check and Prescribe the best drugs that will restore your
-                body
-                system
-                back to normal
+              <p>How it work. click on get started and answers all the  questions carefully.
+                Note that the drug prescription given will be based on your answers.
               </p>
             </div>
             <button id="getStartedBTN"
@@ -462,7 +459,7 @@
             <form id="multistepForm">
               <!-- Step 1 -->
               <div id="step1" class="step">
-                <h2 class="text-xl  font-semibold mb-4">Preliminary Question</h2>
+                <h2 class="text-xl  font-semibold mb-4">Preliminary Questions</h2>
 
 
 
@@ -519,7 +516,7 @@
 
               <!-- Step 2 -->
               <div id="step2" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Bio Data</h2>
+                <h2 class="text-xl font-semibold mb-4">Preliminary Questions</h2>
                 <div class="mb-4">
                   <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                   <input type="text" id="name" name="name"
@@ -535,7 +532,7 @@
                     <option hidden>Select an Option</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
-                    <option value="other">Other (Please specify)</option>
+                    <!-- <option value="other">Other (Please specify)</option> -->
                   </select>
                 </div>
 
@@ -565,7 +562,7 @@
 
               <!-- Step 3 -->
               <div id="step3" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Bio Data Continues</h2>
+                <h2 class="text-xl font-semibold mb-4">Preliminary Questions</h2>
 
                 <div class="mb-4">
                   <label for="bloodGroup" class="block text-sm font-medium text-gray-700">What is your blood
@@ -594,7 +591,7 @@
                     <option hidden>Select an Option</option>
                     <option value="male">Yes</option>
                     <option value="female">No</option>
-                    <option value="other">I prefer not to Answer</option>
+                    <!-- <option value="other">I prefer not to Answer</option> -->
                   </select>
                 </div>
 
@@ -606,7 +603,7 @@
                     <option hidden>Select an Option</option>
                     <option value="male">Yes</option>
                     <option value="female">No</option>
-                    <option value="other">I prefer not to Answer</option>
+                    <!-- <option value="other">I prefer not to Answer</option> -->
                   </select>
                 </div>
 
@@ -619,7 +616,7 @@
 
               <!-- Step 4 -->
               <div id="step4" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Bio Data Continues</h2>
+                <h2 class="text-xl font-semibold mb-4">Preliminary Questions</h2>
                 <div class="mb-4">
                   <label for="married" class="block text-sm font-medium text-gray-700">Are you Married</label>
                   <select id="married" name="gender"
@@ -667,17 +664,17 @@
 
               <!-- Step 5 -->
               <div id="step5" class="step hidden">
-                <div class="text-xl text-center font-semibold mb-4">Important Note:</div>
-                <p class="py-3">
-                  In the Next page kindly select the checkbox of symptoms you are experiencing at the moment to assist
-                  the computer to carry out a thorough diagnosis in other to recommend the best medication for you.
+                <div class="text-xl font-semibold mb-4">GREAT!!! You have come to the end of this Session</div>
+                <p class="pb-3">
+                  In the next session You will be provided with list of symptoms, mark the once that apply to you and at the end click on submit.
+                  the computer will carry out a thorough diagnosis based on your answers and recommend the best medications.
                 </p>
                 <p class="pb-3">
-                  Unless otherwise Stated, stop every other medications you are taking before you Continue with the our
-                  prescription Medication.
+                  Unless otherwise Stated, stop every other drugs you are taking before you Continue with our
+                  prescribed Medication.
                 </p>
                 <p class="text-[red] pb-3">
-                  Note that your privacy is important to us. We will
+                  Note: your privacy is important to us. We will
                   handle your personal data in compliance with the Data
                   Privacy Act of
                   2012
@@ -695,7 +692,7 @@
 
               <!-- Step 6 -->
               <div id="step6" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select all that Apply</h2>
+                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 1/5</h2>
 
                 <div class="list grid grid-cols-2 gap-x-5">
                   <div class="mb-4 flex justify-start items-center gap-x-2">
@@ -750,7 +747,7 @@
 
               <!-- Step 7 -->
               <div id="step7" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select all that Apply</h2>
+                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 2/5</h2>
 
                 <div class="list grid grid-cols-2 gap-x-5">
 
@@ -810,7 +807,7 @@
 
               <!-- Step 8 -->
               <div id="step8" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select all that Apply</h2>
+                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that . Step 3/5</h2>
 
                 <div class="list grid grid-cols-2 gap-x-5">
 
@@ -870,7 +867,7 @@
 
               <!-- Step 9 -->
               <div id="step9" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select all that Apply</h2>
+                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 4/5</h2>
 
                 <div class="list grid grid-cols-2 gap-x-5">
 

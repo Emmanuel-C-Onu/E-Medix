@@ -272,9 +272,7 @@ const Ulcer = ["Omeprazole-20", 'Ulcer kit', 'pantoprazole', "Cemetedin-400", "M
    showStep(currentStep);
  });
 
-//  function treatMalaria() {
-//   if (condition) {
-    
-//   }
-//  }
+function treatMalaria() {
+
+}
  
