@@ -18,6 +18,9 @@
 </head>
 
 <body>
+
+
+
   <div class="ads-wrapper">
     <div
       class="news-letter-ads  hover:rounded-lg w-[100%]  lg:w-[30%] lg:h-[73vh] z-20 fixed top-0 lg:top-[18.5%] left-0 lg:left-[34.5%]   h-[100vh]  bg-blue-500 -translate-y-[1000px] transition-all duration-1000 m-auto overflow-hidden  bg-[url('Images/Bg-Img.PNG')] bg-cover bg-center bg-no-repeat">
@@ -39,12 +42,12 @@
 
             <form id="news-letter-form">
               <div class="grid place-items-center py-4">
-                <input id="subscribe-input" required
+                <input id="subscribe-input"
                   class=" border-none outline-none text-black placeholder:text-center placeholder:text-xl w-72 px-3 py-2 rounded"
                   type="email" placeholder="Enter your Email">
                 <small class="emailErr px-2 rounded-b text-red-600"></small>
               </div>
-              <div class="grid place-items-center"><button
+              <div id="subNL" class="grid place-items-center"><button
                   class="border bg-gradient-to-r from-orange-600  to-green-500 px-3 pb-1 py-[1px] rounded-lg text-2xl">Subscribe</button>
               </div>
             </form>
@@ -68,6 +71,13 @@
           </ul>
         </div>
       </marquee>
+
+      <div id="success" class="overflow-hidden h-0 fixed top-0 left-0  w-full">
+        <div class="bg-[green] w-[100%] py-1 mx-auto text-lg text-center text-white">
+          success
+        </div>
+      </div>
+
       <div class="wrapper hidden lg:block px-10 mx-auto ">
         <div class="flex justify-between items-center">
           <p>WOW Offers! 60-80% Off For All Tablet Medicine</p>
@@ -210,7 +220,9 @@
         </div>
       </div>
     </div>
-    <section class="pb-6">
+
+
+    <section class="pb-6 w-full">
       <div id="about-us" class="about flex flex-col lg:flex-row justify-center items-center w-[90%] my-4 mx-auto">
         <div class="w-[100%] mx-auto">
           <img src="https://ps-medicine.myshopify.com/cdn/shop/files/about_banner_1_570x.png?v=1614788294" alt="">
@@ -225,9 +237,6 @@
             <p>
               E-medix is an Online Medical Health Care Services that offers Varieties of Medical health care services
               such as:
-
-
-
             </p>
           </div>
 
@@ -266,10 +275,10 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row gap-y-3  justify-between mx-auto items-center w-[80%]">
+      <div class="grid grid-cols-2  lg:grid-cols-3 gap-x-2 lg:gap-0 gap-y-2 lg:gap-y-14 w-[100%] px-2">
 
-        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
-          <div class="h-full p-6 grid place-items-center">
+        <div class="w-[100%] m-auto lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full  grid place-items-center">
             <div class="size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
               <img class="hover:animate-spin"
                 src="//ps-medicine.myshopify.com/cdn/shop/files/1_2a44437c-c798-4bd1-8005-cc624f4cf614.png?v=1614788300"
@@ -285,8 +294,8 @@
           </div>
         </div>
 
-        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
-          <div class="h-full p-6 grid place-items-center">
+        <div class="w-[100%] m-auto lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full  grid place-items-center">
             <div
               class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
               <img
@@ -303,9 +312,10 @@
           </div>
 
         </div>
-        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
 
-          <div class="h-full p-6 grid place-items-center">
+        <div class="w-[100%] m-auto lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+
+          <div class="h-full  grid place-items-center">
             <div
               class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
               <img
@@ -322,10 +332,9 @@
           </div>
 
         </div>
-      </div>
-      <div class="flex flex-col lg:flex-row gap-y-3 mt-4 justify-between mx-auto items-center w-[80%]">
-        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
-          <div class="h-full p-6 grid place-items-center">
+
+        <div class="w-[100%] m-auto lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full  grid place-items-center">
             <div
               class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
               <img
@@ -344,8 +353,8 @@
         </div>
 
 
-        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
-          <div class="h-full p-6 grid place-items-center">
+        <div class="w-[100%] m-auto lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full  grid place-items-center">
             <div
               class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
               <img class=""
@@ -362,8 +371,8 @@
           </div>
         </div>
 
-        <div class="w-[100%] lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
-          <div class="h-full p-6 grid place-items-center">
+        <div class="w-[100%] m-auto lg:w-[25vw] h-[45vh] bg-gray-300 shadow">
+          <div class="h-full grid place-items-center">
             <div
               class="hover:animate-spin size-20 border-[.15rem] border-white bg-blue-700 rounded-full grid place-items-center">
               <img
@@ -379,8 +388,14 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </section>
+
+
+
+
     <div id="getStarted" class="overflow-hidden w-full">
       <div id="getStarted1" class="overflow-hidden min-h-96 w-[100%]">
         <article
@@ -394,12 +409,12 @@
             </div>
             <p class="text-lg">GET FREE MEDICAL DIAGNOSIS AND DRUG PRESCRIPTION</p>
             <div class="text-xl block lg:hidden text-justify px-2 lg:px-10">
-              <p>How it work. click on get started and answers all the questions carefully. 
-            Note that the drug prescription given will be based on your answers.
+              <p>How it work. click on get started and answers all the questions carefully.
+                Note that the drug prescription given will be based on your answers.
               </p>
             </div>
             <div class="text-xl hidden lg:block px-2 lg:px-10">
-              <p>How it work. click on get started and answers all the  questions carefully.
+              <p>How it work. click on get started and answers all the questions carefully.
                 Note that the drug prescription given will be based on your answers.
               </p>
             </div>
@@ -445,17 +460,18 @@
       </div>
 
 
-      <div id="getStarted2" class='bg-gradient-to-r from-cyan-200 to-emerald-300 w-[100%] hidden overflow-hidden '>
-
-        <article class="min-h-96 mx-auto flex">
-
-          <div class="w-full min-h-[24rem] hidden lg:block"><img class="py-2 h-96 w-full" src="Images/getStartedBG.PNG" alt=""></div>
+      <div id="getStarted2" class='bg-[blue] w-[100%] hidden overflow-hidden '>
 
 
+        <article id="removeGridCol" class="min-h-96 mx-auto grid lg:grid-cols-2">
 
 
+          <div id="hideOne" class="w-full min-h-96 hidden lg:block bg-cover bg-no-repeat bg-center"
+            style="background-image: url('Images/getStartedBG.PNG');">
+          </div>
 
-          <div class="bg-white px-10 shadow-lg py-2 min-h-96 w-full">
+
+          <div id="hideTwo" class="bg-white px-10 shadow-lg w-full py-2 min-h-96">
             <form id="multistepForm">
               <!-- Step 1 -->
               <div id="step1" class="step">
@@ -493,7 +509,7 @@
                     <option value="fiveDays">A week ago</option>
                     <option value="other">Other</option>
                   </select>
-                <p id="why-here2" class=" text-red-500  hidden">kindly select an option</p>
+                  <p id="why-here2" class=" text-red-500  hidden">kindly select an option</p>
                 </div>
 
                 <div class="mb-4 ">
@@ -522,6 +538,7 @@
                   <input type="text" id="name" name="name"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none"
                     placeholder="Enter your Name">
+                  <p id="nameErr" class=" text-red-500  hidden">Name is required</p>
                 </div>
 
 
@@ -529,28 +546,29 @@
                   <label for="gender" class="block text-sm font-medium text-gray-700">Gender</label>
                   <select id="gender" name="gender"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none">
-                    <option hidden>Select an Option</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option hidden value="">Select an Option</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
                     <!-- <option value="other">Other (Please specify)</option> -->
                   </select>
+                  <p id="genderErr" class=" text-red-500  hidden">kindly select your Gender</p>
                 </div>
 
                 <div class="mb-4">
                   <label for="age" class="block text-sm font-medium text-gray-700">Age</label>
                   <select id="age" name="age" class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none">
-                    <option hidden>Select an Option</option>
-                    <option value="below18">Under 18 Years</option>
-                    <option value="above18">18-25</option>
-                    <option value="above18">26-31</option>
-                    <option value="above18">32-40</option>
-                    <option value="above18">41-50</option>
-                    <option value="above18">51-60</option>
-                    <option value="above18">51-60</option>
-                    <option value="above18">61-70</option>
-                    <option value="above18">70+</option>
+                    <option hidden value="">Select an Option</option>
+                    <option value="below 18">Under 18 Years</option>
+                    <option value="18 - 25">18-25</option>
+                    <option value="26 - 31">26-31</option>
+                    <option value="32 - 40">32-40</option>
+                    <option value="41 - 50">41-50</option>
+                    <option value="51 - 60">51-60</option>
+                    <option value="61 - 70">61-70</option>
+                    <option value="Above 70">70+</option>
                     <!-- <option value="other">Other (Please specify)</option> -->
                   </select>
+                  <p id="ageErr" class=" text-red-500  hidden">Choose your Age from the Range</p>
                 </div>
 
 
@@ -565,48 +583,45 @@
                 <h2 class="text-xl font-semibold mb-4">Preliminary Questions</h2>
 
                 <div class="mb-4">
-                  <label for="bloodGroup" class="block text-sm font-medium text-gray-700">What is your blood
+                  <label for="blood-group" class="block text-sm font-medium text-gray-700">What is your blood
                     type?</label>
-                  <select id="bloodGroup" name="bloodGroup"
+                  <select id="blood-group" name="blood-group"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none" required>
-                    <option hidden>Select an Option</option>
-                    <option value="below18">A+</option>
-                    <option value="above18">A-</option>
-                    <option value="above18">B+</option>
-                    <option value="above18">B-</option>
-                    <option value="above18">AB+</option>
-                    <option value="above18">AB-</option>
-                    <option value="above18">O+</option>
-                    <option value="above18">O-</option>
-
+                    <option hidden value="">Select an Option</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
                   </select>
+                  <p id="blood-group-Err" class=" text-red-500 hidden">kindly select an option</p>
                 </div>
-
-
                 <div class="mb-4">
-                  <label for="gender" class="block text-sm font-medium text-gray-700">Are you Currently taking any
+                  <label for="on-drug" class="block text-sm font-medium text-gray-700">Are you Currently taking any
                     Medication</label>
-                  <select id="gender" name="gender"
+                  <select id="on-drug" name="on-drug"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none">
-                    <option hidden>Select an Option</option>
-                    <option value="male">Yes</option>
-                    <option value="female">No</option>
-                    <!-- <option value="other">I prefer not to Answer</option> -->
+                    <option hidden value="">Select an Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                   </select>
+                  <p id="on-drug-Err" class=" text-red-500 hidden">kindly select an option</p>
                 </div>
 
                 <div class="mb-4">
-                  <label for="gender" class="block text-sm font-medium text-gray-700">Do you have any drug
+                  <label for="drug-allergy" class="block text-sm font-medium text-gray-700">Do you have any drug
                     allergies</label>
-                  <select id="gender" name="gender"
+                  <select id="drug-allergy" name="drug-allergy"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none">
-                    <option hidden>Select an Option</option>
-                    <option value="male">Yes</option>
-                    <option value="female">No</option>
-                    <!-- <option value="other">I prefer not to Answer</option> -->
+                    <option hidden value="">Select an Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                   </select>
+                  <p id="drug-allergy-Err" class=" text-red-500 hidden">kindly select an option</p>
                 </div>
-
 
                 <div class="flex justify-between">
                   <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
@@ -619,55 +634,54 @@
                 <h2 class="text-xl font-semibold mb-4">Preliminary Questions</h2>
                 <div class="mb-4">
                   <label for="married" class="block text-sm font-medium text-gray-700">Are you Married</label>
-                  <select id="married" name="gender"
+                  <select id="married" name="married"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none">
-                    <option hidden>Select an Option</option>
-                    <option value="male">Yes</option>
-                    <option value="female">No</option>
+                    <option hidden value="">Select an Option</option>
+                    <option value="I'm married">Yes</option>
+                    <option value="I'm not married">No</option>
                     <option value="other">I Prefer not to Answer</option>
                   </select>
+                  <p id="marriedErr" class=" text-red-500 hidden">kindly select an option</p>
                 </div>
-
-
                 <div class="mb-4">
-                  <label for="gender" class="block text-sm font-medium text-gray-700">Do you have kids?</label>
-                  <select id="gender" name="gender"
+                  <label for="i-have-kids" class="block text-sm font-medium text-gray-700">Do you have kids?</label>
+                  <select id="i-have-kids" name="i-have-kids"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none" required>
-                    <option hidden>Select an Option</option>
-                    <option value="male">Yes</option>
-                    <option value="female">No</option>
+                    <option hidden value="">Select an Option</option>
+                    <option value="i-have-kids">Yes</option>
+                    <option value="i-do-not-have-kids">No</option>
                     <option value="other">I prefer not to Answer</option>
                   </select>
+                  <p id="iHaveKidsErr" class=" text-red-500 hidden">kindly select an option</p>
                 </div>
 
                 <div class="mb-4">
-                  <label for="married" class="block text-sm font-medium text-gray-700">Are you Pregnant?</label>
-                  <select id="married" name="gender"
+                  <label for="Pregnant" class="block text-sm font-medium text-gray-700">Are you Pregnant?</label>
+                  <select id="Pregnant" name="Pregnant"
                     class="p-2 mt-1 block w-full rounded border border-gray-300 outline-none">
-                    <option hidden>Select an Option</option>
-                    <option value="male">Yes</option>
-                    <option value="female">No</option>
+                    <option hidden value="">Select an Option</option>
+                    <option value="I'm Pregnant">Yes</option>
+                    <option value="I'm not Pregnant">No</option>
                     <option value="other">I Prefer not to Answer</option>
                   </select>
+                  <p id="PregnantErr" class=" text-red-500 hidden">kindly select an option</p>
                 </div>
-
-
-
 
                 <div class="flex justify-between">
                   <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
                   <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
                 </div>
               </div>
-
-
-
               <!-- Step 5 -->
               <div id="step5" class="step hidden overflow-y-scroll">
                 <div class="text-xl font-semibold mb-4">GREAT!!! You have come to the end of this Session</div>
                 <p class="pb-3">
-                  In the next session You will be provided with list of symptoms, mark the once that apply to you and at the end click on submit.
-                  the computer will carry out a thorough diagnosis based on your answers and recommend the best medications.
+                  In the next session You will be provided with list of disease symptoms, mark the once that apply to
+                  you and at
+                  the end
+                  click on submit.
+                  the computer will carry out diagnosis based on the selected disease symptoms and recommend the best
+                  medications (drugs).
                 </p>
                 <p class="pb-3">
                   Unless otherwise Stated, stop every other drugs you are taking before you Continue with our
@@ -689,231 +703,262 @@
                   <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
                 </div>
               </div>
-
               <!-- Step 6 -->
               <div id="step6" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 1/5</h2>
+                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 1/3</h2>
 
                 <div class="list grid grid-cols-2 gap-x-5">
                   <div class="mb-4 flex justify-start items-center gap-x-2">
                     <input type="checkbox" id="malaria" name="malaria"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Malaria</label>
+                    <label for="malaria" class="block font-medium text-gray-700">I have Malaria</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="cough" name="cough"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Cough</label>
+                    <label for="cough" class="block font-medium text-gray-700">I have Cough</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="runny-nose" name="runny-nose"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Runny Nose</label>
+                    <label for="runny-nose" class="block font-medium text-gray-700">I have Runny Nose</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="vomiting" name="vomiting"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I am Vomiting</label>
+                    <label for="vomiting" class="block font-medium text-gray-700">I am Vomiting</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="hache" name="hache"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Headache</label>
+                    <label for="hache" class="block font-medium text-gray-700">I have Headache</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="sore-throat" name="sore-throat"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Sore throat</label>
+                    <label for="sore-throat" class="block font-medium text-gray-700">I have Sore throat</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="watery-stool" name="watery-stool"
                       class="block rin rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">My Stool is watery</label>
+                    <label for="watery-stool" class="block font-medium text-gray-700">My Stool is watery</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="diarrhea" name="diarrhea"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Diarrhea</label>
-                  </div>
-
-                </div>
-
-                <div class="flex justify-between">
-                  <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
-                  <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
-                </div>
-              </div>
-
-
-              <!-- Step 7 -->
-              <div id="step7" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 2/5</h2>
-
-                <div class="list grid grid-cols-2 gap-x-5">
-
-
-
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I am feeling weak</label>
+                    <label for="diarrhea" class="block font-medium text-gray-700">I have Diarrhea</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="watery-eye" name="watery-eye"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Menstural Pain</label>
+                    <label for="watery-eye" class="block font-medium text-gray-700">I have Puffy, watery eyes</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="irritating-eye" name="irritating-eye"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Conjunctivitis</label>
+                    <label for="irritating-eye" class="block font-medium text-gray-700">I have Eye irritation</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="itchy-nose" name="itchy-nose"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Otitis Media</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Chest Pain</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have financial challenge</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Stomach Pain</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Ringworm</label>
-                  </div>
-
-                </div>
-
-
-
-
-                <div class="flex justify-between">
-                  <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
-                  <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
-                </div>
-              </div>
-
-              <!-- Step 8 -->
-              <div id="step8" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 3/5</h2>
-
-                <div class="list grid grid-cols-2 gap-x-5">
-
-
-
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Fever (100 <sup>o</sup>F)</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have frequent bowel movements</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Bloated Stomach</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Bloody stools</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Irregular sleep</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Nausea</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Motion sickness</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I am Sneezing</label>
-                  </div>
-
-                </div>
-
-
-
-
-                <div class="flex justify-between">
-                  <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
-                  <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
-                </div>
-              </div>
-
-              <!-- Step 9 -->
-              <div id="step9" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 4/5</h2>
-
-                <div class="list grid grid-cols-2 gap-x-5">
-
-
-
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Puffy, watery eyes</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Eye irritation</label>
-                  </div>
-                  <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
-                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I am Inflamed, itchy nose and
+                    <label for="itchy-nose" class="block font-medium text-gray-700">Itchy nose and
                       throat</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="hives" name="hives"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Hives or skin rashes</label>
+                    <label for="hives" class="block font-medium text-gray-700">I have Hives or skin rashes</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="chills" name="chills"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Swelling of the lips or Face</label>
+                    <label for="chills" class="block font-medium text-gray-700">Chills</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="worm" name="worm"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Worm</label>
+                    <label for="worm" class="block font-medium text-gray-700">I have Worm</label>
+                  </div>
+
+
+                </div>
+
+                <div class="flex justify-between">
+                  <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
+                  <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
+                </div>
+              </div>
+              <!-- Step 7 -->
+              <div id="step7" class="step hidden">
+                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 2/3</h2>
+
+                <div class="list grid grid-cols-2 gap-x-5">
+
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="weakness" name="weakness"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="weakness" class="block font-medium text-gray-700">I am feeling weak</label>
                   </div>
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="menstral-pain" name="menstral-pain"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I have Difficulty breathing or
+                    <label for="menstral-pain" class="block font-medium text-gray-700">I have Menstural Pain</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="conjunctivitis" name="conjunctivitis"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="conjunctivitis" class="block font-medium text-gray-700">I have Conjunctivitis</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="otitis-media" name="otitis-media"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="otitis-media" class="block font-medium text-gray-700">I have Otitis Media</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="chest-pain" name="chest-pain"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="chest-pain" class="block font-medium text-gray-700">I have Chest Pain</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="toothache" name="toothache"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="toothache" class="block font-medium text-gray-700">I have toothache</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="stomach-pain" name="stomach-pain"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="stomach-pain" class="block font-medium text-gray-700">I have Stomach Pain</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="ringworm" name="ringworm"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="ringworm" class="block font-medium text-gray-700">I have Ringworm</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="breathing-shortage" name="breathing-shortage"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="breathing-shortage" class="block font-medium text-gray-700">I have Difficulty
+                      breathing</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="fever" name="fever"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="fever" class="block font-medium text-gray-700">I have Fever (100
+                      <sup>o</sup>F)</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="bowel-movement" name="bowel-movement"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="bowel-movement" class="block font-medium text-gray-700">I have frequent bowel
+                      movements</label>
+                  </div>
+
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="cold" name="cold"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="cold" class="block font-medium text-gray-700">I'm Cold</label>
+                  </div>
+
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="wheezing" name="wheezing"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="wheezing" class="block font-medium text-gray-700">I am
                       wheezing</label>
                   </div>
+
+
                   <div class="mb-4 flex justify-start items-center gap-x-2">
-                    <input type="checkbox" id="malaria" name="malaria"
+                    <input type="checkbox" id="typhoid" name="typhoid"
                       class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
-                    <label for="age" class="mt-2 block font-medium text-gray-700">I am Fainting/ or lightheadedness</label>
+                    <label for="typhoid" class="block font-medium text-gray-700">I have Typhoid</label>
+                  </div>
+
+                </div>
+
+
+
+
+                <div class="flex justify-between ">
+                  <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
+                  <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
+                </div>
+              </div>
+              <!-- Step 8 -->
+              <div id="step8" class="step hidden">
+                <h2 class="text-xl font-semibold mb-4">Select the checkboxes that apply. Step 3/3</h2>
+
+                <div class="list grid grid-cols-2 gap-x-5">
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="bloated-stomach" name="bloated-stomach"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="bloated-stomach" class="block font-medium text-gray-700">I have Bloated Stomach</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="bloody-stool" name="bloody-stool"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="bloody-stool" class="block font-medium text-gray-700">I have Bloody stools</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="irregular-sleep" name="irregular-sleep"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="irregular-sleep" class="block font-medium text-gray-700">I have Irregular sleep</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="nausea" name="nausea"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="nausea" class="block font-medium text-gray-700">I have Nausea</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="motion-sickness" name="motion-sickness"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="motion-sickness" class="block font-medium text-gray-700">I have Motion sickness</label>
+                  </div>
+
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="sneezing" name="sneezing"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="sneezing" class="block font-medium text-gray-700">I am Sneezing</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="highBodyTemp" name="highBodyTemp"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="highBodyTemp" class="block font-medium text-gray-700">High Body Temperature</label>
+                  </div>
+
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="lightweight" name="lightweight"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="lightweight" class="block font-medium text-gray-700">I am very light</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="backpain" name="backpain"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="backpain" class="block font-medium text-gray-700">I have Back Pain</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="waistpain" name="waistpain"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="waistpain" class="block font-medium text-gray-700">I have Waist Pain</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="eardischarge" name="eardischarge"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="eardischarge" class="block font-medium text-gray-700">I have Ear Discharge</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="dizzyness" name="dizzyness"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="dizzyness" class="block font-medium text-gray-700">I feeling dizzy</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="thrush" name="thrush"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="thrush" class="block font-medium text-gray-700">I have Mouth Ulcer(Thrush)</label>
+                  </div>
+                  <div class="mb-4 flex justify-start items-center gap-x-2">
+                    <input type="checkbox" id="oversleep" name="oversleep"
+                      class="block rounded border border-gray-300 ring-2 ring-blue-600 outline-none" />
+                    <label for="oversleep" class="block font-medium text-gray-700">I'm Sleeping too much</label>
                   </div>
 
                 </div>
@@ -926,12 +971,14 @@
                   <button type="button" class="next bg-indigo-500 text-white py-2 px-4 rounded">Next</button>
                 </div>
               </div>
-
-
-              <!-- Step 10 -->
-              <div id="step3" class="step hidden">
-                <h2 class="text-xl font-semibold mb-4">Final Step</h2>
+              <!-- Step 9 -->
+              <div id="step9" class="step hidden">
+                <h2 class="text-xl font-semibold mb-4">Recommendations</h2>
+                <p class="mb-4">Use Previous button to re-confirm your selections if not sure of them</p>
+                <p class="mb-4">The E-MEDIX prescription is based on the selected disease symptoms</p>
+                <p class="mb-4">Make sure you purchase the exact drugs as prescribed.</p>
                 <p class="mb-4">kindly visit a Doctor If symptoms persist after taking the drugs.</p>
+                <p class="mb-4">Click on Submit button and wait for the prescription</p>
                 <div class="flex justify-between">
                   <button type="button" class="prev bg-gray-500 text-white py-2 px-4 rounded">Previous</button>
                   <button type="submit" class="submit bg-green-500 text-white py-2 px-4 rounded">Submit</button>
@@ -939,168 +986,195 @@
               </div>
             </form>
           </div>
+          <div id="hide3" class="hidden ">
+            <div class="h-96 w-full text-white flex flex-col justify-center items-center bg-[#3B82F6]">
+              <p class="text-center">Please Wait...</p>
+              <p class="text-center">While the Computer Carry out the Diagnosis</p>
 
-
-
-
+            </div>
+          </div>
+          <div id="hide3b" class="hidden ">
+            <div class="h-96 w-full text-white flex flex-col justify-center items-center bg-[#3B82F6]">
+              <p class="text-center">Stop every other ongoing medications before starting ours</p>
+            </div>
+          </div>
+          <div id="hide4" class="hidden ">
+            <div class="h-96 w-full text-white flex flex-col justify-center items-center bg-[#3B82F6]">
+              <p class="text-center">The Prescription will display shortly</p>
+            </div>
+          </div>
         </article>
+      </div>
+    </div>
+    <!-- resultStart -->
+    <div id="showResult" class="w-full m-auto"></div>
 
 
+    <div id="container" class="hidden w-[100%]">
+      <div class="container w-full py-3 flex justify-between items-center">
+        <span></span>
+        <div class="*:px-3 *:border *:border-gray-400 rounded text-black">
+          <button onclick="window.print()">Print</button>
+          <button>Cancel</button>
+          <button onclick="window.save()">Save</button>
+        </div>
+      </div>
+    </div>
+    <!-- resultEnd -->
+
+
+    <article class="px-2 lg:px-0 w-full lg:w-[80%]  mx-auto pb-10">
+      <div class="grid place-items-center py-3">
+        <h2 class="py-2">
+          <span
+            class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Frequently</span>
+          <span
+            class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Asked</span>
+          <span
+            class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Question</span>
+        </h2>
+
+        <div class="border-b-2 border-blue-600 w-48"></div>
+        <div class="flex gap-2 py-1 justify-center items-center">
+          <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
+          <div class="w-2 bg-blue-700 h-2 border-2 border-blue-500 rounded-full"></div>
+          <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
+        </div>
       </div>
 
 
 
-      <article class="px-2 lg:px-0 w-full lg:w-[80%]  mx-auto pb-10">
-        <div class="grid place-items-center py-3">
-          <h2 class="py-2">
-            <span
-              class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Frequently</span>
-            <span
-              class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Asked</span>
-            <span
-              class="lg:text-3xl bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text font-mono">Question</span>
-          </h2>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 rounded-t-lg mb-1">
+        <summary>Are you Doctors?</summary>
+        <p class="py-3">
+          No. We are not Doctors, we are Pharmacists and strongly recommend consulting a Medical Doctor regarding any
+          health
+          concern. We strictly provide pharmaceutical services.
+        </p>
+      </details>
 
-          <div class="border-b-2 border-blue-600 w-48"></div>
-          <div class="flex gap-2 py-1 justify-center items-center">
-            <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
-            <div class="w-2 bg-blue-700 h-2 border-2 border-blue-500 rounded-full"></div>
-            <div class="w-1.5 bg-blue-700 h-1.5 border-2 border-blue-500 rounded-full"></div>
-          </div>
-        </div>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>Can I call instead of text chat?</summary>
+        <p class="py-3">
+          Yes. We have provisions for audio and video chat with our Pharmacists. However, while the 30-minutes text
+          chat is
+          free,
+          audio and video consultation is a paid service.
+        </p>
+      </details>
 
-
-
-        <details class="bg-blue-500 text-white px-2 py-3 rounded-t-lg mb-1">
-          <summary>Are you Doctors?</summary>
-          <p class="py-3">
-            No. We are not Doctors, we are Pharmacists and strongly recommend consulting a Medical Doctor regarding any
-            health
-            concern. We strictly provide pharmaceutical services.
-          </p>
-        </details>
-
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>Can I call instead of text chat?</summary>
-          <p class="py-3">
-            Yes. We have provisions for audio and video chat with our Pharmacists. However, while the 30-minutes text
-            chat is
-            free,
-            audio and video consultation is a paid service.
-          </p>
-        </details>
-
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>Do you deliver prescription drugs?</summary>
-          <p class="py-3">
-            Yes, we do. However, we need to see a prescription obtained from a Doctor before we can deliver prescription
-            drugs.
-          </p>
-        </details>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>Do you deliver prescription drugs?</summary>
+        <p class="py-3">
+          Yes, we do. However, we need to see a prescription obtained from a Doctor before we can deliver prescription
+          drugs.
+        </p>
+      </details>
 
 
 
 
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>How authentic are the medications...?</summary>
-          <p class="py-3">
-            We are dedicated to delivering only quality and authentic medications. To achieve this, we have partnered
-            with
-            only
-            pharmacies that are fully licensed and regulated by the Pharmacists’ Council of Nigeria. (PCN), as well as
-            agencies
-            regulating products.
-          </p>
-        </details>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>How authentic are the medications...?</summary>
+        <p class="py-3">
+          We are dedicated to delivering only quality and authentic medications. To achieve this, we have partnered
+          with
+          only
+          pharmacies that are fully licensed and regulated by the Pharmacists’ Council of Nigeria. (PCN), as well as
+          agencies
+          regulating products.
+        </p>
+      </details>
 
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>When can I place orders?</summary>
-          <p class="py-3">
-            Orders can be placed at any time of the day using any of our platforms.
-          </p>
-        </details>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>When can I place orders?</summary>
+        <p class="py-3">
+          Orders can be placed at any time of the day using any of our platforms.
+        </p>
+      </details>
 
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>Can I order for a family member?</summary>
-          <p class="py-3">
-            Yes. However, indicate who the drug is for as this information is important for your database and can help
-            us
-            provide
-            professional recommendations.
-          </p>
-        </details>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>Can I order for a family member?</summary>
+        <p class="py-3">
+          Yes. However, indicate who the drug is for as this information is important for your database and can help
+          us
+          provide
+          professional recommendations.
+        </p>
+      </details>
 
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>Is it safe to order the Drug online...?</summary>
-          <p class="py-3">
-            We are confident to say definitely Yes. We are dedicated to delivering only quality and authentic
-            medications,
-            which is
-            why we have workforce of qualified and fully licensed Pharmacists who work for E-Medix Store and also, we
-            partner
-            with
-            fully licensed pharmacy stores to ensure you get the best value for your money.
-          </p>
-        </details>
-
-
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>Can I cancel/edit my order?</summary>
-          <p class="py-3">
-            Yes, you can cancel or edit your order. However, once an order has been paid for, it will be locked and you
-            will
-            be
-            UNABLE to edit or cancel your order.
-          </p>
-        </details>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>Is it safe to order the Drug online...?</summary>
+        <p class="py-3">
+          We are confident to say definitely Yes. We are dedicated to delivering only quality and authentic
+          medications,
+          which is
+          why we have workforce of qualified and fully licensed Pharmacists who work for E-Medix Store and also, we
+          partner
+          with
+          fully licensed pharmacy stores to ensure you get the best value for your money.
+        </p>
+      </details>
 
 
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>What areas do you serve?</summary>
-          <p class="py-3">
-            We currently deliver within Abuja, however, we have special provisions for delivery outside Abuja while we
-            are
-            working to expand our service area.
-          </p>
-        </details>
-
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>What happens if I miss a dose?</summary>
-          <p class="py-3">
-            Take the medicine as soon as you can, but skip the missed dose if it is almost time for your next dose. Do
-            not
-            take two
-            doses at one time.
-          </p>
-        </details>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>Can I cancel/edit my order?</summary>
+        <p class="py-3">
+          Yes, you can cancel or edit your order. However, once an order has been paid for, it will be locked and you
+          will
+          be
+          UNABLE to edit or cancel your order.
+        </p>
+      </details>
 
 
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>What areas do you serve?</summary>
+        <p class="py-3">
+          We currently deliver within Abuja, however, we have special provisions for delivery outside Abuja while we
+          are
+          working to expand our service area.
+        </p>
+      </details>
 
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>What to avoid while taking Drugs.</summary>
-          <p class="py-3">
-            Follow your doctor's instructions about any restrictions on food, beverages, or activity.
-          </p>
-        </details>
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>What happens if I miss a dose?</summary>
+        <p class="py-3">
+          Take the medicine as soon as you can, but skip the missed dose if it is almost time for your next dose. Do
+          not
+          take two
+          doses at one time.
+        </p>
+      </details>
 
 
-        <details class="bg-blue-500 text-white px-2 py-3 mb-1">
-          <summary>What if i am on ongoing drugs?</summary>
-          <p class="py-3">
-            Tell your doctor about all your other medicines you are taking
-          </p>
-        </details>
+
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>What to avoid while taking Drugs.</summary>
+        <p class="py-3">
+          Follow your doctor's instructions about any restrictions on food, beverages, or activity.
+        </p>
+      </details>
+
+
+      <details class="bg-blue-500 cursor-pointer text-white px-2 py-3 mb-1">
+        <summary>What if i am on ongoing drugs?</summary>
+        <p class="py-3">
+          Tell your doctor about all your other medicines you are taking
+        </p>
+      </details>
 
 
 
 
 
-      </article>
+    </article>
   </main>
   <footer class="min-h-[70vh] bg-gradient-to-r from-blue-700 via-[#0000ff9f] to-blue-700">
     <!-- <img src="https://emedicstore.org/images/pcn.png" alt=""> -->
   </footer>
 
+  <script src="Js/symptoms.js"></script>
   <script src="Js/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <!-- bootstrap section-->
@@ -1113,9 +1187,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-
-
 </body>
 
 </html>
