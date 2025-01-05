@@ -13,7 +13,7 @@ let header = document.querySelector("header");
 let removeMobileMenu = () => menu.classList.remove("max-h-[250px]");
 
 setTimeout(() => {
-  newsLetterAds.classList.toggle("-translate-y-[1000px]");
+  newsLetterAds.classList.toggle("-translate-y-[2000px]");
 }, 20000);
 
 newsLetterForm.addEventListener("submit", (ev) => {
@@ -59,7 +59,7 @@ back2Top.addEventListener("click", () => {
 closeNewsLetterAds.addEventListener("click", closeSubModal);
 
 function closeSubModal() {
-  newsLetterAds.classList.toggle("-translate-y-[1000px]");
+  newsLetterAds.classList.toggle("-translate-y-[2000px]");
 }
 menuButton.addEventListener("click", () =>
   menu.classList.toggle("max-h-[250px]")
@@ -90,14 +90,14 @@ function continueGetStarted() {
 }
 
 const AntiBoil = [
-  "Lincomycins",
+  "Lincomycin 500mg",
   "RYCIN-500",
-  "Ampiclox",
-  "Ampicillin",
+  "Ampiclox 500mg",
+  "Ampicillin 500mg",
   "Ampicap-500",
   "Cloxacap-500",
 ];
-const wormTab = ["Ketrax (Leavamisole)", "Zolat", "Mebendazole", "Albendazole"];
+const wormTab = ["Ketrax (Leavamisole)", "Zolat-200", "Mebendazole-500", "Albendazole-200"];
 
 const AntiTyphoid = [
   "Cyplox 500mg",
@@ -109,8 +109,8 @@ const AntiTyphoid = [
 ];
 
 const AntiScabis = [
-  "Erythromycin",
-  "Azithromycin",
+  "Erythromycin 500mg",
+  "Azithromycin 500mg",
   "Cmaxid-500",
   "Celexin-500",
 ];
@@ -124,14 +124,14 @@ const AntiSTD = [
   "Levofloxacin-500",
 ];
 const AntiCough = [
-  "Emtrim-960",
-  "Cotrimoxazole",
-  "RYCIN-500",
-  "Amoxicap-500",
-  "Primpex-960",
-  "Erythromycin",
-  "Azimax-250",
-  "Azithromycin",
+  "Emtrim 960mg",
+  "Cotrimoxazole 960mg",
+  "RYCIN 500mg",
+  "Amoxicap 500mg",
+  "Primpex 960mg",
+  "Erythromycin 500mg",
+  "Azimax 500mg",
+  "Azithromycin 500mg",
 ];
 const AntiDiarriah1 = [
   "Tetracycline 500mg",
@@ -146,11 +146,11 @@ const AntiDiarriah2 = [
 ];
 // const StomachAche = ["Emgyl-400", "Buscopan-10", "metronidazole", "Nizole-200"];
 const Antihistamine = [
-  "Sivo-Loratadin",
-  "Loratadin-10",
-  "Contact",
-  "Actifed",
-  "Sinufed"
+  "Sivo-Loratadin 10mg",
+  "Loratadin-10mg",
+  "Contact 4mg",
+  "Actifed 4mg",
+  "Sinufed 4mg"
 ];
 const mildAnagelsic = [
   "Paracetamol 500mg (Emzor)",
@@ -162,15 +162,15 @@ const mildAnagelsic = [
 const ExtraAnagelsic = ["Boska", "Sudrex", "Panadol-Extra", "Emcap Extra"];
 const strongAnagelsic = [
   "Brustan-N",
-  "Cataflam-50",
-  "Clofenac-50",
-  "Felvin-20",
-  "Flotac-75",
+  "Cataflam 100mg",
+  "Clofenac 100mg",
+  "Felvin 20mg",
+  "Flotac 75mg",
   "Dolo-Meta-B",
   "Ibex",
   "Ibucap Fort",
   "Emprofen-400",
-  "Piroxicam-20",
+  "Piroxicam 20mg",
 ];
 const AntiMal = [
   "LUTER-80/480",
@@ -179,20 +179,23 @@ const AntiMal = [
   "Gevither-plus 80/480",
   "Lokmal-QS 80/480",
   "IBUMATEM 80/480",
-  "P-Alaxin",
-  "P-Alaxin TS",
   "Lonart-DS 80/480",
-  "Coatel-Fort",
+  "Coatel-Fort 80/480",
   "Coartem 80/480",
 ];
 const fungai = ["Ketovid-200", "Griseofulvin-500", "Fungral-200"];
 
 const Ulcer = [
   "Omeprazole-20",
-  "Ulcer kit",
+  "ULSAKIT",
   "pantoprazole",
   "Cemetedin-400",
-  "Misoprostol",
+  "OMEFAST PLUS",
+  "OMESHAL PLUS KIT",
+  "ESOFAG-KIT",
+  "ULCERDREX",
+  "PYLOKIT",
+  "ACIKIT",
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -758,13 +761,13 @@ function showDrugs() {
                   ${ulcerDrugs}
                 </th>
                 <td class="px-6 py-4">
-                 1
+                 Ask Pharmacist
                 </td>
                 <td class="px-6 py-4">
-                  2 times
+                  Ask Pharmacist
                 </td>
                 <td class="px-6 py-4">
-                  3-7 days
+                 Ask Pharmacist
                 </td>    
               </tr>
       `;
@@ -782,10 +785,10 @@ function showDrugs() {
                  1
                 </td>
                 <td class="px-6 py-4">
-                  2 times
+                 once a day
                 </td>
                 <td class="px-6 py-4">
-                  3-7 days
+                 14 -21 days
                 </td>    
               </tr>
       `;
