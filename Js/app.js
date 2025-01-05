@@ -44,7 +44,7 @@ newsLetterForm.addEventListener("submit", (ev) => {
 
 header.onmouseleave = removeMobileMenu;
 window.addEventListener("scroll", () => {
-  scrollY > 150
+  scrollY > 30
     ? (back2Top.classList.remove("h-0"),
       nav2.classList.add("fixed"),
       nav2.classList.add("bg-blue-50"))
@@ -52,18 +52,23 @@ window.addEventListener("scroll", () => {
       nav2.classList.remove("fixed"),
       nav2.classList.remove("bg-blue-50"));
 });
-back2Top.addEventListener("click", () => {
+back2Top.addEventListener("click", b2t);
+
+function b2t() {
   scrollTo({ top: 0, behavior: "smooth" });
-});
+  
+}
 
 closeNewsLetterAds.addEventListener("click", closeSubModal);
 
 function closeSubModal() {
   newsLetterAds.classList.toggle("-translate-y-[2000px]");
+  b2t();
 }
-menuButton.addEventListener("click", () =>
-  menu.classList.toggle("max-h-[250px]")
-);
+menuButton.addEventListener("click", () =>{
+  menu.classList.toggle("max-h-[250px]"),
+b2t()
+});
 
 let getStarted1 = document.getElementById("getStarted1");
 let getStarted2 = document.getElementById("getStarted2");
