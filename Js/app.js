@@ -34,11 +34,11 @@ newsLetterForm.addEventListener("submit", (ev) => {
     isValid = true;
     closeSubModal();
     setTimeout(() => {
-      success.classList.remove("h-0");
+      success.classList.remove("-translate-y-[1500px]");
     }, 1000);
     setTimeout(() => {
-      success.classList.add("h-0");
-    }, 6000);
+      success.classList.add("-translate-y-[1500px]");
+    }, 5000);
   }
 });
 
